@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/*** COMMON ***/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*:hover {
+  text-decoration: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*:focus {
+  outline: none;
+}
+
+li {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+Link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.5px solid rgb(155, 152, 152);
+  padding: 10px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  height: 50px;
+  width: 100%;
+  background-color: hotpink;
+  color: "white";
+  margin: 20 0;
+}
+
+/*** FLEX-BOX ***/
+
+.centered {
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.space-around {
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**** COLORS ***/
+
+.is-blue {
+  color: blue;
+}
+
+.social-login {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  align-items: "center";
+}
+
+.parti {
+  flex: 1;
 }
