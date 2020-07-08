@@ -3,10 +3,6 @@ import Cookies from "js-cookie";
 
 import FacebookLogin from "react-facebook-login"; // found 4000 los severity !!
 
-import {
-  FacebookLoginButton,
-  GoogleLoginButton,
-} from "react-social-login-buttons";
 import "./App.css";
 import Header from "./components/Header.js";
 import LocalSignIn from "./components/LocalSignIn";

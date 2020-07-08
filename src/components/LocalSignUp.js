@@ -112,11 +112,11 @@ const LocalSignUp = ({ email, username, onLogin, setUsername, setEmail }) => {
 
         <label className="cgu-cgv">
           « J’accepte les{" "}
-          <a href="#" className="is-blue">
+          <a href="http//:wwww.wisesound.fr" className="is-blue">
             <b>Conditions Générales de Vente</b>
           </a>{" "}
           et les{" "}
-          <a href="#" className="is-blue">
+          <a href="http//:wwww.wisesound.fr" className="is-blue">
             <b>Conditions Générales d’Utilisation</b>
           </a>{" "}
           »
