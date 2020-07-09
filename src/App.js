@@ -28,7 +28,17 @@ function App() {
   };
 
   const FBresponse = (response) => {
-    console.log(response.accessToken, response.name);
+    //console.log(response.accessToken, response.name);
+    // si on veut créer un nouveau profil dans base de users :
+
+    // 1. PB : dans le back d’users, créer un un user demande un axios.post avec
+    // {
+    //   email: email,
+    //   username: username,
+    //   password: password,
+    // }
+    // );
+    // Si on passe par Facebook on n’a pas le password donc il faut créer un 2e axios POST avec « Facebook » en paramètre pour en entrer un user dans un model flexible ?
     onLogin(response.accessToken, response.name);
   };
 

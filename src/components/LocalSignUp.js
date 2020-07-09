@@ -6,7 +6,6 @@ const LocalSignUp = ({ email, username, onLogin, setUsername, setEmail }) => {
   const [passwordbis, setPasswordbis] = useState("");
   const [acceptConditions, setAcceptConditions] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  //const history = useHistory();
 
   const handleSubmit = async () => {
     // regex on username allow to avoid special characters, to count letters, allow from a to z and from 0 to 9, including - and _, for a total between 3 and 15 characters :
